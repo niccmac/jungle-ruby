@@ -29,6 +29,13 @@ form.button_to {
   display: inline;
 }
 
+span.badge {
+  background-color: red;
+  padding: 0.65em 0.65em;
+  // display: none;
+  font-size: medium;
+} 
+
 .hero {
   height: 75vh;
   background-image: url("/images/hero_header.jpg");

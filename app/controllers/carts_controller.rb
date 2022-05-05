@@ -1,5 +1,5 @@
 class CartsController < ApplicationController
-  before_filter :authorize
+  before_action :authorize
   def show
     if !enhanced_cart.empty? 
       render "show"
@@ -29,5 +29,7 @@ class CartsController < ApplicationController
     cart.delete(product_id) if cart[product_id] < 1
     update_cart cart
   end
+
+  protect_from_forgery with: :exception
 
 end

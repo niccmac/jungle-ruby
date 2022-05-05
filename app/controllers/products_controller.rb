@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
-  # before_filter :authorize Should be able to see products
+  before_action :authorize
+  
   def index
     @products = Product.all.order(created_at: :desc)
   end
@@ -7,5 +8,7 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find params[:id]
   end
+  
+  protect_from_forgery with: :exception
 
 end

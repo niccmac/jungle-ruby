@@ -4,13 +4,17 @@ Rails.application.routes.draw do
   get 'static_pages/faq'
   get 'static_pages/about'
   get 'about' => 'about'
-  get '/signup' => 'users#new'
-    post '/users' => 'users#create'
+
+  get '/signup' => 'user#new'
+    post '/users' => 'user#create'
   get '/login' => 'sessions#new'
     post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
+  
   root to: 'products#index'
 
+
+  # :name matches controller matches crud (only shows what parts of crud you want)
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 

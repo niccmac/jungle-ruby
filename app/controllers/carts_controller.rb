@@ -1,5 +1,5 @@
 class CartsController < ApplicationController
-
+  before_filter :authorize
   def show
     if !enhanced_cart.empty? 
       render "show"

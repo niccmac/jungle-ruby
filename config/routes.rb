@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'static_pages/faq'
   get 'static_pages/about'
   get 'about' => 'about'
+  get '/signup' => 'users#new'
+    post '/users' => 'users#create'
   root to: 'products#index'
 
   resources :products, only: [:index, :show]

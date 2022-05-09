@@ -25,6 +25,10 @@ RSpec.describe Product, type: :model do
       expect(product.errors.full_messages).to include("Price can't be blank")
     end
 
+    it "Product has an invalid entry quantity." do 
+      product = catID.products.create name: "Fake Name", price: 24.49
+      expect(product.errors.full_messages).to include("Quantity can't be blank")
+    end
   end
 end
 

@@ -217,6 +217,17 @@ cat3.products.create!({
   price: 79.99
 })
 
+puts "Create user"
+
+User.destroy_all
+
+testUser = User.create!({
+  first_name: "Test Name", 
+  last_name: "Test Last Name", 
+  email: "testemail@test.com", 
+  password: "123", 
+  password_confirmation: "123"
+})
 
 puts "DONE!"
 

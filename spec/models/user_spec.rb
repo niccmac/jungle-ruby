@@ -39,6 +39,14 @@ RSpec.describe User, type: :model do
       user = User.create first_name: "Fake name", last_name: nil, email: "testemail@test.com", password: "123456", password_confirmation: "123456"
       expect(user).to_not be_valid
     end
-
+    
   end 
+  
+  describe '.authenticate_with_credentials' do
+    
+    it "create with correct details." do
+      authUser = User.authenticate_with_credentials("testemail@test.com", "123465")
+      expect(authUser).to be_valid
+    end
+  end
 end

@@ -7,4 +7,8 @@ describe('visit the home page', () => {
     cy.get('.title').contains('Where you can find any plants!');
   });
 
+  it("There are products on the page", () => {
+    cy.get(".products article").should("be.visible");
+  });
+
 });

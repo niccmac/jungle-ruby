@@ -62,8 +62,6 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    auto_strip_attributes (2.6.0)
-      activerecord (>= 4.0)
     autoprefixer-rails (10.4.2.0)
       execjs (~> 2)
     bcrypt (3.1.17)
@@ -96,6 +94,13 @@ GEM
     childprocess (4.1.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    cypress-rails (0.5.3)
+      puma (>= 3.8.0)
+      railties (>= 5.2.0)
+    database_cleaner-active_record (2.0.1)
+      activerecord (>= 5.a)
+      database_cleaner-core (~> 2.0.0)
+    database_cleaner-core (2.0.1)
     diff-lcs (1.5.0)
     digest (3.1.0)
     dotenv (2.7.6)
@@ -289,13 +294,14 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  auto_strip_attributes (~> 2.6)
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   bootstrap (~> 5.0.1)
   byebug
   capybara (>= 3.26)
   carrierwave
+  cypress-rails
+  database_cleaner-active_record
   dotenv-rails
   faker
   font-awesome-rails

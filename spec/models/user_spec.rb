@@ -24,7 +24,7 @@ RSpec.describe User, type: :model do
       expect(user2).to_not be_valid
     end
 
-    it "create without whitespace." do
+    it "create without email with whitespace." do
       user = User.create first_name: "Fake Name", last_name: "Fake Last Name", email: "testemail@test.com", password: "123456", password_confirmation: "123456"
       user2 = User.create first_name: "Fake Name", last_name: "Fake Last Name", email: " testemail@test.com ", password: "123456", password_confirmation: "123456"
       expect(user2).to_not be_valid

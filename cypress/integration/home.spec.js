@@ -1,7 +1,6 @@
 
 describe('visit the home page', () => {
   beforeEach(() => {
-    // cy.request('/cypress_rails');
     cy.visit('/');
   });
 

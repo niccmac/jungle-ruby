@@ -226,7 +226,7 @@ testUser = User.create!({
   last_name: "Test Last Name", 
   email: "testemail@test.com", 
   password: "123456", 
-  password_confirmation: "123465"
+  password_confirmation: "123456"
 })
 
 puts "DONE!"

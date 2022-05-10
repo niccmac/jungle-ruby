@@ -45,8 +45,9 @@ RSpec.describe User, type: :model do
   describe '.authenticate_with_credentials' do
     
     it "create with correct details." do
-      authUser = User.authenticate_with_credentials("testemail@test.com", "123465")
-      expect(authUser).to be_valid
+      user = User.create first_name: "Fake name", last_name: "Fake Last Name", email: "testemail@test.com", password: "123456", password_confirmation: "123456"
+      authUser = User.authenticate_with_credentials(user.email, user.password)
+      expect(authUser).to eq(user)
     end
   end
 end

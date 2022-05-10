@@ -12,7 +12,7 @@ CypressRails.hooks.before_server_start do
     name:  'Giant Tea',
     description: "The Giant Tea is an uncommon, medium-sized plant and can be found only in some tundras. It blooms twice a year, for 3 weeks.",
     image: open_asset('plante_1.jpg'),
-    quantity: 0,
+    quantity: 1,
     price: 64.99
   })
 
@@ -24,6 +24,15 @@ CypressRails.hooks.before_server_start do
     quantity: 18,
     price: 24.99
   })
+  
+  User.create!({
+    first_name: "Test Name", 
+    last_name: "Test Last Name", 
+    email: "testemail@test.com", 
+    password: "123456", 
+    password_confirmation: "123456"
+  })
+
 end
 
 CypressRails.hooks.after_transaction_start do

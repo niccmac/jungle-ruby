@@ -8,13 +8,29 @@ Here is what was added -
 
 ### Sold out sticker
 
+If product quantity is less than one - sold out badge will display.
 ![Sold out Sticker](https://raw.githubusercontent.com/niccmac/jungle-ruby/master/public/images/Screen%20Shot%202022-05-11%20at%203.37.57%20PM.png)
 
 ### Admin for categories
 
+With authentication admin can add categories and view all categories.
+
 ![drop down](https://github.com/niccmac/jungle-ruby/blob/master/public/images/Screen%20Shot%202022-05-11%20at%203.38.12%20PM.png)
 
 ![add new](https://github.com/niccmac/jungle-ruby/blob/master/public/images/Screen%20Shot%202022-05-11%20at%203.38.25%20PM.png)
+
+### Login/Signup
+
+User login with secure passwords, and minimum password lengths. Will check if user email already exisits.
+
+Orders show user email.
+
+![login](https://github.com/niccmac/jungle-ruby/blob/master/public/images/Screen%20Shot%202022-05-11%20at%203.38.35%20PM.png)
+![order](https://github.com/niccmac/jungle-ruby/blob/master/public/images/Screen%20Shot%202022-05-11%20at%203.39.33%20PM.png)
+
+### No order redirect
+
+![No orders in cart](https://github.com/niccmac/jungle-ruby/blob/master/public/images/Screen%20Shot%202022-05-11%20at%203.39.42%20PM.png)
 
 ## Setup
 

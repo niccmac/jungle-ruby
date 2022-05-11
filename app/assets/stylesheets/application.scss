@@ -5,24 +5,24 @@
 
 // Vendor
 // @import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome";
+@import 'bootstrap';
+@import 'font-awesome';
 
 // App
-@import "products";
+@import 'products';
 
 // Fonts
 // Global
 body {
   // padding-top: 70px;
   font-size: 20px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 // Bootstrap adjustments
 form.button_to {
@@ -34,11 +34,11 @@ span.badge {
   padding: 0.65em 0.65em;
   // display: none;
   font-size: medium;
-} 
+}
 
 .hero {
   height: 75vh;
-  background-image: url("/images/hero_header.jpg");
+  background-image: url('/images/hero_header.jpg');
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -68,7 +68,7 @@ span.badge {
 
 .hero .title {
   margin: auto 0;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   color: white;
   text-transform: uppercase;
   width: max-content;
@@ -106,7 +106,7 @@ span.badge {
 
   .navbar-brand {
     font-weight: 900;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     text-transform: uppercase;
     font-style: italic;
   }

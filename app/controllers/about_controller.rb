@@ -1,6 +1,6 @@
 class AboutController < ApplicationController
   #Might not really need an auth here
-  before_action :authorize
+  # before_action :authorize
 
   def about
     render "show"

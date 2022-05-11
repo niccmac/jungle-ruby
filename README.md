@@ -2,6 +2,12 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+This project needed a few bugs to be checked out, and some features upgraded!
+
+Here is what was added -
+
+[]()
+
 ## Setup
 
 1. Run `bundle install` to install dependencies

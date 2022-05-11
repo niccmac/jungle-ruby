@@ -6,7 +6,15 @@ This project needed a few bugs to be checked out, and some features upgraded!
 
 Here is what was added -
 
+### Sold out sticker
+
 ![Sold out Sticker](https://raw.githubusercontent.com/niccmac/jungle-ruby/master/public/images/Screen%20Shot%202022-05-11%20at%203.37.57%20PM.png)
+
+### Admin for categories
+
+![drop down](https://github.com/niccmac/jungle-ruby/blob/master/public/images/Screen%20Shot%202022-05-11%20at%203.38.12%20PM.png)
+
+![add new](https://github.com/niccmac/jungle-ruby/blob/master/public/images/Screen%20Shot%202022-05-11%20at%203.38.25%20PM.png)
 
 ## Setup
 
